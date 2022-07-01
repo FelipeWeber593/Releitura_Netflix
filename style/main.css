@@ -1,0 +1,113 @@
+:root{/*Define as cores como variáveis*/
+    --azul:rgb(0,98,171);
+    --preto:#000000;
+    --branco:#ffffff;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;/*Limita os elementos como eu quero*/
+}
+body{
+    background: var(--preto);/*Cita a cor das variáveis*/
+    font-family:   'ARIAL';
+    color:white;
+}
+header .container{/*Classe declarada para o cabeçalho da página*/
+    display:flex;
+    flex-direction: row;
+    align-items: center;/**/
+    justify-content: space-between;/*Justifica entre tags distribuindo no container*/
+}
+header .logo{
+    margin-left:5px;
+    color:var(--azul);
+    font-family:'Arial Black';
+    font-size:40px;  
+}
+header nav a{/*Barra de inicio, jogos, torcida e documentários*/
+text-decoration: none;
+color:var(--branco);
+margin-right: 10px;
+}
+header nav a:hover{/*Quando o usuário passar o mouse por cima do link a, ele muda para esta cor*/
+    color:#AAA;
+}
+
+/*Coisas relacionadas ao time principal*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%),  url('/images/capa.jpg');
+
+    height:400px;
+    background-size:cover;
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao{
+    margin-top: 10PX;
+    margin-bottom: 40px;
+
+}
+.filme-principal .titulo {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin-top: 15%;
+}
+.botao{
+    background-color:#000000;/*Degrade azul*/
+    border:none;
+    color:var(--branco);
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor:pointer;
+    transition: .3s ease all; /*Tempo de transição quando passar o mouse encima*/
+}
+.botao:hover{/*Inversão de cores ao color o mouse encima*/
+    background-color: white;
+    color:black
+}
+.container{/*Função container serve para alinhas ou alterar os itens de uma só vez*/
+    margin-left:20px;
+    margin-right:20px;
+}
+
+
+.box-filme{
+    height: 100%;
+    width: 350PX;
+    display:block;
+}
+
+.carrosel-filmes{
+    margin-top: 6px;
+}
+.info {
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%),  url('/images/informacoes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;/* Deixa o backgound como cover, ou seja ele fica como papel de parede da terra*/
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+}
+.info .conteudo{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: aril;
+    margin-left: 20px;
+    position:relative;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+}
