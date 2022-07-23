@@ -1,7 +1,11 @@
 # Releitura_Netflix
 Releitura feita do site da Netflix, usando Css, HTML e JS
 
-Finalidade do projeto:
+
+
+
+> **Note:** Finalidade do projeto:
+>
 >Atualizar conforme for aprendendo mais sobre as linguagens, de modo natural
 
 #Finalização do projeto:
